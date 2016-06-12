@@ -1,0 +1,114 @@
+
+.container-fluid {
+    width: 100%;
+}
+#navbar {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.00) 0%, #000000 100%);
+}
+#cabezera {
+    min-height: 800px;
+    background-image: url(/images/B95.jpg);
+    background-size: cover;
+    
+}
+.container {
+    width: 1000px;
+    margin:auto;  
+}
+
+
+#encabezado {
+    min-height: 160px;
+    background-color: cornsilk;
+    align-content: flex-start;
+    align-content: center;
+    justify-content: space-between;
+}
+#encabezado article {
+    display: flex;
+    background-repeat:space;
+    background-position:center;
+
+    
+}
+#imagen {
+    position: relative;
+}
+#titulo {
+    font-size: 1.6em;
+    line-height: 0.9em;
+    font-weight: 200px;
+    
+}
+/*#logo-principal {
+    /*background-image: url(/images/logo2.png);*/
+    /*min-height: 150px;
+    display:flex;
+    margin: auto;
+    
+}*/
+#menu {
+    height: 50px;
+    background-color:aqua;
+    display: flex;
+    justify-content: center;
+}
+#menu li {
+    list-style-type: none;
+    padding: 5px;
+    font-family:serif;
+    font-size: 1.5em;
+}
+#menu>ul>li {
+    display: inline-block;
+}
+#menu li a {
+    text-decoration: none;
+    color:blueviolet;
+}
+}
+#menu>ul>li>a {
+    padding: 10px;
+    /*background-color: darkgray;*/
+}
+#menu li ul {
+    display: none;
+}
+#menu>ul>li>a:hover {
+    background-color: bisque;
+    transition: 0.5s;
+}
+#menu>ul {
+    padding: 0;
+}
+#nota-importante {
+    height: 463px; 
+    background-color: cornsilk;
+    margin: 0;
+    box-shadow: 0 0 20px rgba(90, 72, 140, 0.5);
+}
+
+#notas-secundarias{
+    min-height: 300px;
+    width: 700px;
+    background-color: rgba(64, 95, 95, 0.67);
+    display: inline-block;
+    float: left;
+}
+#publicidad{
+    min-height: 300px;
+    width: 275px;
+    background-color: rgba(70, 74, 181, 0.67);
+    display: inline-block;
+    float: right;
+    
+}
+#pie-pagina{
+    min-height: 150px;
+    background-color: rgba(185, 23, 129, 0.67);
+    clear: both;
+    
+}
