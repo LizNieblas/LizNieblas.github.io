@@ -1,16 +1,22 @@
-
+h1,h2,h3,h4,h5,h6,body {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    color: white;
+}
 .container-fluid {
     width: 100%;
+    margin: 0;
 }
 #navbar {
     height: 80px;
     width: 100%;
-    position: fixed;
     background-image: linear-gradient(0deg, rgba(255,255,255,0.00) 0%, #000000 100%);
 }
 #cabezera {
     min-height: 800px;
-    background-image: url(/images/B95.jpg);
+    background-image: url(/images/fondo3.jpg);
     background-size: cover;
     
 }
@@ -22,7 +28,7 @@
 
 #encabezado {
     min-height: 160px;
-    background-color: cornsilk;
+    /*background-color: cornsilk;*/
     align-content: flex-start;
     align-content: center;
     justify-content: space-between;
@@ -37,22 +43,9 @@
 #imagen {
     position: relative;
 }
-#titulo {
-    font-size: 1.6em;
-    line-height: 0.9em;
-    font-weight: 200px;
-    
-}
-/*#logo-principal {
-    /*background-image: url(/images/logo2.png);*/
-    /*min-height: 150px;
-    display:flex;
-    margin: auto;
-    
-}*/
 #menu {
     height: 50px;
-    background-color:aqua;
+    /*background-color:aqua;*/
     display: flex;
     justify-content: center;
 }
@@ -67,18 +60,18 @@
 }
 #menu li a {
     text-decoration: none;
-    color:blueviolet;
+    color:white;
 }
 }
 #menu>ul>li>a {
     padding: 10px;
-    /*background-color: darkgray;*/
+    /*background-color: white;*/
 }
 #menu li ul {
     display: none;
 }
 #menu>ul>li>a:hover {
-    background-color: bisque;
+    background-color: rgba(0, 251, 241, 0.4);
     transition: 0.5s;
 }
 #menu>ul {
@@ -86,29 +79,135 @@
 }
 #nota-importante {
     height: 463px; 
-    background-color: cornsilk;
+    /*background-color: cornsilk;*/
     margin: 0;
-    box-shadow: 0 0 20px rgba(90, 72, 140, 0.5);
+    /*box-shadow: 0 0 20px rgba(90, 72, 140, 0.5);*/
 }
 
 #notas-secundarias{
     min-height: 300px;
     width: 700px;
-    background-color: rgba(64, 95, 95, 0.67);
-    display: inline-block;
-    float: left;
+    /*background-color: rgba(64, 95, 95, 0.67);*/
+    display:flex;
+    float:left;
+    margin:0;
+    text-align: center;
+    margin-bottom: 15px;
 }
+#notas-secundarias>article>figure {
+    margin: auto;
+    margin-right: 10px;
+}
+    
+.cheescake {
+    text-decoration: none;
+}
+.boton{
+    background: rgba(255, 90, 151, 0.6);;
+    display:inline-block;
+    padding: 0px;
+    box-shadow: 0px 2px 3px bisque;
+    width: auto;
+    height: auto;
+}
+.boton>div{
+    padding: 1px 2px;
+    border: 5px solid rgba(255, 90, 151, 1);
+}
+.boton p{
+    color: white;
+    font-variant:normal;
+    font-size: 1em;
+    margin: 0;
+}
+
+
 #publicidad{
     min-height: 300px;
     width: 275px;
-    background-color: rgba(70, 74, 181, 0.67);
+    /*background-color: rgba(70, 74, 181, 0.67);*/
     display: inline-block;
-    float: right;
+    /*float: right;*/
     
+}
+.video {
+    margin-left: 7.5px;
+    margin-bottom: 12px;
+}
+
+#flexible {
+    display: flex;
+}
+#redes-sociales {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.facebook, .twitter {
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    text-indent: -9999px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.facebook {
+    background: url('../images/facebook_twitter.png')0 0;
+}
+.twitter {
+    background: url('../images/facebook_twitter.png')-43px 0;
+}
+.facebook:hover{
+    background: url('../images/facebook_twitter.png') 0 -43px;
+}
+.twitter:hover{
+    background: url('../images/facebook_twitter.png') -43px -43px;
 }
 #pie-pagina{
-    min-height: 150px;
-    background-color: rgba(185, 23, 129, 0.67);
-    clear: both;
-    
+    min-height: 50px;
+    /*background-color: rgba(185, 23, 129, 0.67);*/
+    clear: both; 
 }
+.border {
+    text-align: center;
+    border-top: 3px double pink;
+    border-bottom: 3px double pink;
+    color: white;
+    font-size: 1em;
+}
+
+.menu-pie {
+    height: 50px;
+    /*background-color:aqua;*/
+    display: flex;
+    justify-content: center;
+}
+.menu-pie li {
+    list-style-type: none;
+    padding: 5px;
+    font-family:serif;
+    font-size: 0.8em;
+}
+.menu-pie>ul>li {
+    display: inline-block;
+}
+.menu-pie li a {
+    text-decoration: none;
+    color:white;
+}
+
+.menu-pie>ul>li>a {
+    padding: 10px;
+    /*background-color: white;*/
+}
+.menu-pie li ul {
+    display: none;
+}
+.menu-pie>ul>li>a:hover {
+    background-color: rgba(0, 251, 241, 0.4);
+    transition: 0.5s;
+}
+.menu-pie>ul {
+    padding: 0;
+}
+
+
